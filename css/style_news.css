@@ -1,0 +1,103 @@
+/* ОСОБИСТО ДЛЯ NEWS */
+   :root{
+    --gap: 20px;
+    --card-radius: 12px;
+    --card-bg: plum;
+    --muted: black;
+    --shadow: 0 6px 20px rgba(16,24,40,0.08);
+  }
+  
+  main{
+    max-width:1200px;
+    margin:30px auto;
+    padding:0 16px;
+  }
+
+  /* Сітка карточок */
+  section.news-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: var(--gap);
+  }
+
+  /* Карточка (article) */
+  article.news-card{
+    background: var(--card-bg);
+    border-radius: var(--card-radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 260ms ease, box-shadow 260ms ease;
+    display: flex;
+    flex-direction: column;
+  }
+
+  article.news-card:focus-within,
+  article.news-card:hover{
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(16,24,40,0.12);
+  }
+
+  /* Зображення як верхня обкладинка */
+  figure.card-figure{
+    margin:0;
+    position:relative;
+    min-height:140px;
+    height:42%;
+  }
+  figure.card-figure img{
+    width:100%;
+    height:100%;
+    display:block;
+    object-fit:cover;
+    vertical-align:middle;
+    transition: transform 350ms ease;
+  }
+  article.news-card:hover figure.card-figure img{
+    transform: scale(1.05);
+  }
+
+  /* Контент карточки */
+  header.card-header{
+    padding:14px 16px 0 16px;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+  }
+  
+  header.card-header h3{
+    margin:0 0 8px 0;
+    font-size:16px;
+	
+  }
+  
+  p.card-excerpt{
+    margin:0 0 12px 0;
+    color:var(--muted);
+    font-size:14px;
+    /* Обрізання до 3 рядків */
+    display:-webkit-box;
+    -webkit-line-clamp:3;
+    -webkit-box-orient:vertical;
+    overflow:hidden;
+  }
+
+  /* Мета інформація (дата, категорія) */
+  footer.card-meta{
+    margin-top:auto;
+    padding:12px 16px;
+    display:flex;
+    gap:10px;
+    align-items:center;
+    border-top:1px solid rgba(15,23,42,0.04);
+  }
+  time {
+    font-size: 14px;
+    color:var(--muted);
+  }
+  a.read-more{
+    margin-left:auto;
+    text-decoration:none;
+    font-weight:600;
+    font-size: 14px;
+    color:#ffffff;
+  }

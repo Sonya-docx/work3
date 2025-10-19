@@ -1,0 +1,39 @@
+/* ОСОБИСТО ДЛЯ EDUCATION */
+main{
+	max-width:1200px;
+    margin: 30px auto;
+    padding:0 16px;
+}
+
+caption {
+	font-size: 18px;
+	font-weight: bold;
+}
+table {
+	text-align: left;
+	position: relative;
+	border: 2px solid indigo;
+	border-collapse: collapse;
+	background-color: white;
+}
+
+td, th {
+  border: 1px solid indigo;
+  padding: 30px;
+}
+
+th {
+  background: #9932CC;
+  color: white;
+  position: sticky;
+  top: 0;
+  padding: 10px;
+}
+
+thead {
+	text-align: center;
+}
+
+tbody > tr:hover {
+  background-color: plum;
+}  

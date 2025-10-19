@@ -1,0 +1,80 @@
+* {
+	font-family: Century Schoolbook;
+	font-size: 18px;
+	color: black;
+}
+
+header {
+	background-color: #9932CC;
+	display: flex;
+	align-items: center;
+}
+
+hr {
+  border: none;
+  height: 2px;
+  margin: 20px 0;
+  background-color: black;
+}
+
+h1 {
+	font-size: 25px;
+	margin: 30px;
+}
+
+body {
+	background-color: 	#BA55D3;
+	margin: 0;
+    padding: 0;
+}
+
+footer {
+	background-color: #9932CC;
+	text-align: right;
+}
+
+.footer  p{
+	font-size: 10px;
+	color: indigo;
+}
+.footer a {
+	font-size: 10px;
+	color: indigo;
+	text-decoration: none;
+}
+
+.footer :hover a {
+	color: plum;
+}
+
+.logotype {
+	margin: 0;
+	padding: 0;
+}
+.logotype img{
+	width: 64px;
+	heigth: 64px;
+}
+
+.page-navigation {
+  border-color: #101010;
+  min-height: 64px;
+}
+
+.page-navigation li:hover a{
+  color: plum;
+ }
+
+.page-navigation li {
+  float: left;
+}
+
+.header__item  {
+	line-height: 4em;
+	padding: 0 30px;
+	list-style-type: none;
+}
+
+.header__item  a{
+	text-decoration: none;
+}
